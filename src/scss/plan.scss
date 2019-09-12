@@ -31,9 +31,13 @@
 .plan__intro{
     max-width: $narrow-width;
     margin: 0 auto;
-    padding: 0px 30px;
     line-height: 1.4;
-
+    margin-bottom: 30px;
+    margin: 0px 10vw 50px 10vw;
+    @media screen and (min-width: 850px){
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
     p{
         font-family: $alt-font;
         max-width: $narrow-width;
@@ -53,5 +57,68 @@
     }
     @media screen and (min-width: 950px){
         font-size: 3em;
+    }
+}
+
+.plan__section{
+    padding: 50px 10vw 40px 10vw;
+    background: $mid-green;
+    position: relative;
+
+    // background-image: url("../img/bg-individual.svg");
+    background-size: cover;
+    background-position: bottom;
+    @media screen and (min-width: 850px){
+        padding: 80px 20vw 80px 20vw;
+    }
+    &.plan__section--company{
+        background-color: $brand-green;
+        color: $white;
+    }
+    &.plan__section--clients{
+        background-color: $dark-green;
+        color: $white;
+    }
+}
+
+.plan__section-title{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: $grey;
+}
+
+.commitment{
+    max-width: $narrow-width;
+    margin: 0 auto;
+}
+
+.commitment__name{
+    color: $dark-green;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.commitment__points{
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.commitment__point{
+    margin-bottom: 5px;
+    padding-left: 25px;
+    position: relative;
+    &:before{
+        position: absolute;
+        top: 2px;
+        left: 0px;
+        content: "";
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../img/tick.svg");
     }
 }
