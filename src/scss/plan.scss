@@ -96,7 +96,7 @@
 .commitment__name{
     color: $dark-green;
     font-size: 1.5em;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .commitment__points{
@@ -105,12 +105,14 @@
 }
 
 .commitment__point{
+    font-family: $alt-font;
+    color: $grey;
     margin-bottom: 5px;
-    padding-left: 25px;
+    padding-left: 30px;
     position: relative;
     &:before{
         position: absolute;
-        top: 2px;
+        top: 5px;
         left: 0px;
         content: "";
         display: inline-block;
