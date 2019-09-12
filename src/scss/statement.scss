@@ -1,0 +1,43 @@
+
+.statement{
+    padding: 40px 10vw 40px 10vw;
+    position: relative;
+    background: $mid-green;
+    font-size: 1.1em;
+    line-height: 1.4;
+    @media screen and (min-width: 850px){
+        padding: 60px 20vw 60px 20vw;
+    }
+
+    p{
+        font-family: $alt-font;
+        max-width: $narrow-width;
+        margin: 0 auto 20px auto;
+        @media screen and (min-width: 850px){
+            font-size: 1.2em;
+        }
+    }
+
+    .statement__boxed{
+        padding: 25px;
+        width: 100%;
+        max-width: 100%;
+        background: $brand-green;
+        color: $white;
+        font-weight: bold;
+        font-family: $main-font;
+        text-align: center;
+        font-size: 1.3em;
+        margin: 40px 0px;
+        box-shadow: -10px 10px 0px $dark-green;
+        @media screen and (min-width: 850px){
+            padding: 40px;
+            box-shadow: -20px 20px 0px $dark-green;
+            font-size: 1.4em;
+            margin: 50px 0px;
+        }
+        @media screen and (min-width: 960px){
+            font-size: 1.5em;
+        }
+    }
+}
