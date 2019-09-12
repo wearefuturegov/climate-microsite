@@ -1,10 +1,15 @@
-$max-width: 1100px;
-
-$brand-green: #1E9EA3;
-$yellow: #EEE8A9;
+// layout
+$widest-width: 1100px;
+$narrow-width: 570px;
+// colours
 $white: #fafafa;
-$bright-green: #007651;
-
+$pale-green: #F0F4F4;
+$mid-green: #DBE8E8;
+$brand-green: #1E9EA3;
+$dark-green: #006066;
+$yellow: #EEE8A9;
+$black: #1c1c1c;
+// typography
 $main-font: Aleo, serif;
 $alt-font: Muli, sans-serif;
 
@@ -13,4 +18,22 @@ $alt-font: Muli, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #1c1c1c;
 }
+
+body{
+    background: $pale-green;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+*:focus{
+    background: $yellow;
+    outline: none;
+    box-shadow: 0px 0px 0px 3px $yellow
+}
+
+@import "header.scss";
+@import "hero.scss";

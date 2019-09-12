@@ -1,0 +1,93 @@
+.hero{
+    // min-height: 100vh;
+    padding: 80px 10vw 40px 10vw;
+    position: relative;
+    background: $mid-green;
+    &:after{
+        content: ""
+    }
+    @media screen and (min-width: 850px){
+        padding: 100px 20vw 100px 20vw;
+    }
+}
+
+.hero__triangle{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 50%;
+    @media screen and (min-width: 850px){
+        height: 85%;
+    }
+}
+
+.hero__inner{
+    margin: 0 auto;
+    background: $white;
+    padding: 25px;
+    // max-width: $widest-width;
+    box-shadow: -10px 10px 0px $dark-green;
+    position: relative;
+    @media screen and (min-width: 850px){
+        padding: 35px;
+        box-shadow: -20px 20px 0px $dark-green;
+    }
+    @media screen and (min-width: 960px){
+        padding: 45px;
+    }
+}
+
+.slider{
+    margin-bottom: 30px;
+    @media screen and (min-width: 850px){
+        font-size: 2em;
+    }
+    @media screen and (min-width: 950px){
+        font-size: 2.5em;
+    }
+    @media screen and (min-width: 1400px){
+        font-size: 3em;
+    }
+}
+
+.slider__message{
+    color: $brand-green;
+}
+
+.slider__source{
+    font-size: 14px;
+    color: $brand-green;
+    font-family: $alt-font;
+    font-weight: 100;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    @media screen and (min-width: 850px){
+        font-size: 16px;
+    }
+    &:after{
+        content: "";
+        display: inline-block;
+        height: 10px;
+        width: 15px;
+        background-image: url("../img/external-link.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 3px;
+    }
+}
+
+.slider__tagline{
+    font-weight: bold;
+    font-size: 1.4em;
+    @media screen and (min-width: 850px){
+        font-size: 2em;
+    }
+    @media screen and (min-width: 950px){
+        font-size: 2.5em;
+    }
+    @media screen and (min-width: 1400px){
+        font-size: 3em;
+    }
+}
