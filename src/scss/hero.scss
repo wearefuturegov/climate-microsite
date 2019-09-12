@@ -1,13 +1,17 @@
 .hero{
-    // min-height: 100vh;
-    padding: 80px 10vw 40px 10vw;
+    padding: 90px 10vw 5x0px 10vw;
     position: relative;
     background: $mid-green;
     &:after{
         content: ""
     }
     @media screen and (min-width: 850px){
-        padding: 100px 20vw 100px 20vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20vw 40px 20vw;
     }
 }
 
@@ -25,15 +29,14 @@
     margin: 0 auto;
     background: $white;
     padding: 25px;
-    // max-width: $widest-width;
     box-shadow: -10px 10px 0px $dark-green;
     position: relative;
     @media screen and (min-width: 850px){
-        padding: 35px;
+        padding: 40px;
         box-shadow: -20px 20px 0px $dark-green;
     }
     @media screen and (min-width: 960px){
-        padding: 45px;
+        padding: 55px;
     }
 }
 
@@ -50,8 +53,21 @@
     }
 }
 
+@keyframes fadeIn {
+    from{ 
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to{ 
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
 .slider__message{
+    display: block;
     color: $brand-green;
+    animation: fadeIn 0.5s ease-out;
 }
 
 .slider__source{
