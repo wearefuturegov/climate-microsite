@@ -1,6 +1,7 @@
 .pledge{
     padding: 40px 10vw 40px 10vw;
     position: relative;
+    background: $mid-green;
     @media screen and (min-width: 850px){
         padding: 80px 20vw 80px 20vw;
     }
@@ -65,19 +66,30 @@
     background: $mid-green;
     position: relative;
 
-    // background-image: url("../img/bg-individual.svg");
+    background-image: url("../img/bg-individual.svg");
     background-size: cover;
     background-position: bottom;
     @media screen and (min-width: 850px){
         padding: 80px 20vw 80px 20vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     &.plan__section--company{
         background-color: $brand-green;
-        color: $white;
+        background-image: url("../img/bg-company.svg");
+        p, li, h3, {
+            color: $white;
+        }
     }
     &.plan__section--clients{
         background-color: $dark-green;
-        color: $white;
+        background-image: url("../img/bg-clients.svg");
+        p, li, h3, {
+            color: $white;
+        }
     }
 }
 

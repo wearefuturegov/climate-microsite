@@ -13,6 +13,9 @@
         align-items: center;
         padding: 40px 20vw 40px 20vw;
     }
+    @media screen and (min-width: 1400px){
+        padding: 40px 25vw 40px 25vw;
+    }
 }
 
 .hero__triangle{
@@ -22,6 +25,9 @@
     height: 50%;
     @media screen and (min-width: 850px){
         height: 85%;
+    }
+    @media screen and (min-width: 1400px){
+        height: 95%;
     }
 }
 
@@ -68,6 +74,13 @@
     display: block;
     color: $brand-green;
     animation: fadeIn 0.5s ease-out;
+    min-height: 160px;
+    @media screen and (min-width: 550px){
+        min-height: 40px;
+    }
+    @media screen and (min-width: 850px){
+        height: 180px;
+    }
 }
 
 .slider__source{
@@ -97,6 +110,7 @@
 .slider__tagline{
     font-weight: bold;
     font-size: 1.4em;
+    margin-bottom: 15px;
     @media screen and (min-width: 850px){
         font-size: 2em;
     }

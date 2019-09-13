@@ -2,11 +2,13 @@
 .statement{
     padding: 40px 10vw 40px 10vw;
     position: relative;
-    background: $mid-green;
     font-size: 1.1em;
     line-height: 1.4;
     @media screen and (min-width: 850px){
         padding: 60px 20vw 60px 20vw;
+    }
+    @media screen and (min-width: 1400px){
+        padding: 60px 25vw 60px 25vw;
     }
 
     p{
