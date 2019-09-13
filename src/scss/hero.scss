@@ -74,13 +74,13 @@
     display: block;
     color: $brand-green;
     animation: fadeIn 0.5s ease-out;
-    min-height: 160px;
-    @media screen and (min-width: 550px){
-        min-height: 40px;
-    }
-    @media screen and (min-width: 850px){
-        height: 180px;
-    }
+    // min-height: 160px;
+    // @media screen and (min-width: 550px){
+    //     min-height: 40px;
+    // }
+    // @media screen and (min-width: 850px){
+    //     min-height: 180px;
+    // }
 }
 
 .slider__source{

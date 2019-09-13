@@ -1,7 +1,6 @@
 .site-footer{
     padding: 25px;
     text-align: center;
-    font-family: $alt-font;
     background: $mid-green;
     @media screen and (min-width: 850px){
         padding: 45px 25px;
@@ -9,10 +8,12 @@
     p{
         color: $black;
         opacity: 0.5;
+        font-family: $alt-font;
     }
 }
 
 .site-footer__link{
+    font-family: $alt-font;
     &:hover{
         text-decoration: none
     }

@@ -1,0 +1,28 @@
+.contact{
+    font-size: 1.1em;
+    line-height: 1.4;
+    padding: 40px 10vw;
+    @media screen and (min-width: 850px){
+        padding: 60px 20vw;
+    }
+    @media screen and (min-width: 1400px){
+        padding: 60px 25vw;
+    }
+}
+
+.contact__inner{
+    margin: 0px auto;
+    position: relative;
+    max-width: $narrow-width;
+
+    h2.crosshead{
+        margin-bottom: 10px
+    }
+
+    p{
+        margin-bottom: 40px;
+        font-size: 1.1em;
+        color: $black;
+        font-family: $alt-font;
+    }
+}
