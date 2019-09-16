@@ -3,8 +3,8 @@
 
 <script>
   window.addEventListener("load", function(){
-    var clicked = localStorage.getItem('climateClicked');
     // localStorage.setItem('climateClicked', 'false')
+    var clicked = localStorage.getItem('climateClicked');
 
     var climateElement = '<div id="climate-action">'+
     '  <div class="climate-action__triangle"></div>'+
@@ -26,7 +26,7 @@
     '</div>';
 
 
-    if (clicked == 'false') {
+    if (clicked != 'true') {
       document.body.innerHTML += climateElement;
       var fact = document.getElementById("climate-action__box__text__fact_change")
       var factArray = [
