@@ -14,8 +14,8 @@ window.addEventListener("load", function(){
 
 
 
-  // localStorage.setItem('climateClicked', 'false')
-  var clicked = localStorage.getItem('climateClicked');
+  // localStorage.setItem(window.location.hostname.split(".")[1]+'climateClicked', 'false')
+  var clicked = localStorage.getItem(window.location.hostname.split(".")[1]+'climateClicked');
 
   var climateElement = '<div id="climate-action">'+
   '  <div class="climate-action__triangle"></div>'+
@@ -53,7 +53,7 @@ window.addEventListener("load", function(){
 });
 
 function clicked() {
-  localStorage.setItem('climateClicked', 'true');
+  localStorage.setItem(window.location.hostname.split(".")[1]+'climateClicked', 'true');
   window.open(
     'https://climate.thepanoply.com/',
     '_blank'
@@ -61,6 +61,6 @@ function clicked() {
 }
 
 function removeBox() {
-  localStorage.setItem('climateClicked', 'true');
+  localStorage.setItem(window.location.hostname.split(".")[1]+'climateClicked', 'true');
   document.getElementById("climate-action").remove();
 }
