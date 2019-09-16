@@ -63,6 +63,7 @@
     position: relative;
     background-size: cover;
     background-position: 0% 99%;
+    margin-top: -1px;
 
     &.plan__section--individuals{
         background-color: $pale-green;
