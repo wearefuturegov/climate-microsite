@@ -49,6 +49,8 @@
 }
 #climate-action .climate-action__box .climate-action__box__text {
   padding: 18px;
+  box-shadow: -2px -3px 13px 0px rgba(0,64,68,0.1);
+  -webkit-box-shadow: -2px -3px 13px 0px rgba(0,64,68,0.1);
 }
 @media screen and (min-width: 600px) {
   #climate-action .climate-action__box .climate-action__box__text {
