@@ -130,6 +130,7 @@
   cursor: pointer;
   background: none;
   border: none;
+  padding: 0;
 }
 @media screen and (min-width: 600px) {
   #climate-action #climate-action__close {
