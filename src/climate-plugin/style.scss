@@ -21,146 +21,147 @@ body {
   @media screen and (min-width: $breakpoint){
     font-size: 1.25em;
   }
-}
 
-.climate-action__triangle{
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 125px 125px;
-  border-color: transparent transparent $brand transparent;
-  z-index: 989;
-  @media screen and (min-width: $breakpoint){
-    border-width: 0 0 200px 200px;
-  }
-}
-
-.climate-action__box {
-  background: #fff;
-  z-index: 991;
-  position: absolute;
-  bottom: 25px;
-  right: 25px;
-  width: 300px;
-  box-shadow: -13px 13px 0px $brand-dark;
-  @media screen and (min-width: $breakpoint){
-    bottom: 50px;
-    right: 50px;
-    width: 375px;
-    box-shadow: -20px 20px 0px $brand-dark;
-  }
-}
-
-.climate-action__box__text {
-  padding: $padding;
-  @media screen and (min-width: $breakpoint){
-    padding: $padding-desktop;
-  }
-}
-
-.climate-action__box__text__fact {
-  padding-right: $padding;
-  min-height: 75px;
-  display: block;
-  margin-bottom: $padding;
-  margin-top: 0;
-  @media screen and (min-width: $breakpoint){
-    margin-bottom: $padding-desktop;
-    padding-right: $padding-desktop;
-  }
-}
-.climate-action__box__text__tagline {
-  margin: 0;
-}
-
-#climate-action__box__text__fact_change {
-  font-weight: bold;
-}
-
-.climate-action__button {
-  padding: $padding;
-  background: $yellow;
-  width: 100%;
-  text-align: left;
-  font-size: 0.8em;
-  border: none;
-  color: $brand-dark;
-  cursor: pointer;
-  position: relative;
-  @media screen and (min-width: $breakpoint){
-    padding: $padding-desktop;
-    font-size: 1em;
-  }
-
-  .climate-action__chevron-right {
-    border-style: solid;
-    border-width: 0.15em 0.15em 0 0;
-    content: '';
-    height: 0.45em;
-    transform: rotate(45deg);
+  .climate-action__triangle{
     position: absolute;
-    width: 0.45em;
-    right: $padding;
-    top: $padding+4px;
-    transition: right 0.2s ease;
+    right: 0px;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 125px 125px;
+    border-color: transparent transparent $brand transparent;
+    z-index: 989;
     @media screen and (min-width: $breakpoint){
-      right: $padding-desktop;
-      top: $padding-desktop+6px;
+      border-width: 0 0 200px 200px;
     }
   }
-  &:hover {
-    background: darken($yellow, 2%);
+
+  .climate-action__box {
+    background: #fff;
+    z-index: 991;
+    position: absolute;
+    bottom: 25px;
+    right: 15px;
+    width: 300px;
+    box-shadow: -13px 13px 0px $brand-dark;
+    @media screen and (min-width: $breakpoint){
+      bottom: 50px;
+      right: 40px;
+      width: 375px;
+      box-shadow: -20px 20px 0px $brand-dark;
+    }
+
+    .climate-action__box__text {
+      padding: $padding;
+      @media screen and (min-width: $breakpoint){
+        padding: $padding-desktop;
+      }
+    }
+
+    .climate-action__box__text__fact {
+      padding-right: $padding;
+      min-height: 75px;
+      display: block;
+      margin-bottom: $padding;
+      margin-top: 0;
+      @media screen and (min-width: $breakpoint){
+        margin-bottom: $padding-desktop;
+        padding-right: $padding-desktop;
+      }
+    }
+    .climate-action__box__text__tagline {
+      margin: 0;
+    }
+
+    #climate-action__box__text__fact_change {
+      font-weight: bold;
+    }
+  }
+
+  .climate-action__button {
+    padding: $padding;
+    background: $yellow;
+    width: 100%;
+    text-align: left;
+    font-size: 0.8em;
+    border: none;
+    color: $brand-dark;
+    cursor: pointer;
+    position: relative;
+    @media screen and (min-width: $breakpoint){
+      padding: $padding-desktop;
+      font-size: 1em;
+    }
+
     .climate-action__chevron-right {
-      right: 15px;
+      border-style: solid;
+      border-width: 0.15em 0.15em 0 0;
+      content: '';
+      height: 0.45em;
+      transform: rotate(45deg);
+      position: absolute;
+      width: 0.45em;
+      right: $padding;
+      top: $padding+4px;
+      transition: right 0.2s ease;
+      @media screen and (min-width: $breakpoint){
+        right: $padding-desktop;
+        top: $padding-desktop+6px;
+      }
+    }
+    &:hover {
+      background: darken($yellow, 2%);
+      .climate-action__chevron-right {
+        right: 15px;
+      }
+    }
+    &:focus {
+      outline: 4px solid darken($yellow, 40%);
     }
   }
-  &:focus {
-    outline: 4px solid darken($yellow, 40%);
-  }
-}
 
 
-#climate-action__close {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  width: $padding;
-  height: $padding;
-  opacity: 0.4;
-  cursor: pointer;
-  background: none;
-  border: none;
-  @media screen and (min-width: $breakpoint){
-    right: 20px;
-    top: 20px;
-    width: $padding-desktop;
-    height: $padding-desktop;
+  #climate-action__close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: $padding;
+    height: $padding;
+    opacity: 0.4;
+    cursor: pointer;
+    background: none;
+    border: none;
+    @media screen and (min-width: $breakpoint){
+      right: 20px;
+      top: 20px;
+      width: $padding-desktop;
+      height: $padding-desktop;
+    }
+    &:focus {
+      outline: 4px solid darken($yellow, 40%);
+    }
   }
-  &:focus {
-    outline: 4px solid darken($yellow, 40%);
+  #climate-action__close:hover {
+    opacity: 1;
+  }
+  #climate-action__close:before, #climate-action__close:after {
+    position: absolute;
+    left: 11px;
+    content: ' ';
+    height: $padding;
+    width: 2px;
+    background-color: $brand-dark;
+    top: 0;
+    @media screen and (min-width: $breakpoint){
+      height: $padding-desktop;
+    }
+  }
+  #climate-action__close:before {
+    transform: rotate(45deg);
+  }
+  #climate-action__close:after {
+    transform: rotate(-45deg);
   }
 }
-#climate-action__close:hover {
-  opacity: 1;
-}
-#climate-action__close:before, #climate-action__close:after {
-  position: absolute;
-  left: 11px;
-  content: ' ';
-  height: $padding;
-  width: 2px;
-  background-color: $brand-dark;
-  top: 0;
-  @media screen and (min-width: $breakpoint){
-    height: $padding-desktop;
-  }
-}
-#climate-action__close:before {
-  transform: rotate(45deg);
-}
-#climate-action__close:after {
   transform: rotate(-45deg);
-}
