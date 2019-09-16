@@ -7,7 +7,7 @@ window.addEventListener("load", function(){
       link.id   = cssId;
       link.rel  = 'stylesheet';
       link.type = 'text/css';
-      link.href = 'https://rawcdn.githack.com/wearefuturegov/climate-microsite/23af5ef0eb011c6de545bfdf9a4ca12cfb98e5b3/src/climate-plugin/climate-styles.css';
+      link.href = 'https://wearefuturegov.github.io/climate-microsite/src/climate-plugin/climate-styles.css';
       link.media = 'all';
       head.appendChild(link);
   }
