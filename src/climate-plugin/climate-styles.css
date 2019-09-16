@@ -7,11 +7,11 @@
   z-index: 990;
   color: #006066;
   font-family: Aleo, serif;
-  font-size: 0.9em;
+  font-size: 16px;
 }
 @media screen and (min-width: 600px) {
   #climate-action {
-    font-size: 1.25em;
+    font-size: 20px;
   }
 }
 #climate-action .climate-action__triangle {
@@ -72,6 +72,12 @@
 }
 #climate-action .climate-action__box .climate-action__box__text__tagline {
   margin: 0;
+  font-size: 14px;
+}
+@media screen and (min-width: 600px) {
+  #climate-action .climate-action__box .climate-action__box__text__tagline {
+    font-size: 18px;
+  }
 }
 #climate-action .climate-action__box #climate-action__box__text__fact_change {
   font-weight: bold;
@@ -81,7 +87,7 @@
   background: #EEE8A9;
   width: 100%;
   text-align: left;
-  font-size: 0.8em;
+  font-size: 14px;
   border: none;
   color: #006066;
   cursor: pointer;
@@ -90,7 +96,7 @@
 @media screen and (min-width: 600px) {
   #climate-action .climate-action__button {
     padding: 25px;
-    font-size: 1em;
+    font-size: 18px;
   }
 }
 #climate-action .climate-action__button .climate-action__chevron-right {
