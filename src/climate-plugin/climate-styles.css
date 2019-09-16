@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Aleo:300,400,700|Muli:300,400,700&display=swap");
+body {
+  background: pink;
+}
+
+#climate-action {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 990;
+  color: #006066;
+  font-family: Aleo, serif;
+  font-size: 1em;
+}
+@media screen and (min-width: 600px) {
+  #climate-action {
+    font-size: 1.25em;
+  }
+}
+#climate-action .climate-action__triangle {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 125px 125px;
+  border-color: transparent transparent #1E9EA3 transparent;
+  z-index: 989;
+}
+@media screen and (min-width: 600px) {
+  #climate-action .climate-action__triangle {
+    border-width: 0 0 200px 200px;
+  }
+}
+#climate-action .climate-action__box {
+  background: #fff;
+  z-index: 991;
+  position: absolute;
+  bottom: 25px;
+  right: 15px;
+  width: 300px;
+  box-shadow: -13px 13px 0px #006066;
+}
+@media screen and (min-width: 600px) {
+  #climate-action .climate-action__box {
+    bottom: 50px;
+    right: 40px;
+    width: 375px;
+    box-shadow: -20px 20px 0px #006066;
+  }
+}
+#climate-action .climate-action__box .climate-action__box__text {
+  padding: 18px;
+}
+@media screen and (min-width: 600px) {
+  #climate-action .climate-action__box .climate-action__box__text {
+    padding: 25px;
+  }
+}
+#climate-action .climate-action__box .climate-action__box__text__fact {
+  padding-right: 18px;
+  min-height: 75px;
+  display: block;
+  margin-bottom: 18px;
+  margin-top: 0;
+}
+@media screen and (min-width: 600px) {
+  #climate-action .climate-action__box .climate-action__box__text__fact {
+    margin-bottom: 25px;
+    padding-right: 25px;
+  }
+}
+#climate-action .climate-action__box .climate-action__box__text__tagline {
+  margin: 0;
+}
+#climate-action .climate-action__box #climate-action__box__text__fact_change {
+  font-weight: bold;
+}
+#climate-action .climate-action__button {
+  padding: 18px;
+  background: #EEE8A9;
+  width: 100%;
+  text-align: left;
+  font-size: 0.8em;
+  border: none;
+  color: #006066;
+  cursor: pointer;
+  position: relative;
+}
+@media screen and (min-width: 600px) {
+  #climate-action .climate-action__button {
+    padding: 25px;
+    font-size: 1em;
+  }
+}
+#climate-action .climate-action__button .climate-action__chevron-right {
+  border-style: solid;
+  border-width: 0.15em 0.15em 0 0;
+  content: "";
+  height: 0.45em;
+  transform: rotate(45deg);
+  position: absolute;
+  width: 0.45em;
+  right: 18px;
+  top: 22px;
+  transition: right 0.2s ease;
+}
+@media screen and (min-width: 600px) {
+  #climate-action .climate-action__button .climate-action__chevron-right {
+    right: 25px;
+    top: 31px;
+  }
+}
+#climate-action .climate-action__button:hover {
+  background: #ece6a0;
+}
+#climate-action .climate-action__button:hover .climate-action__chevron-right {
+  right: 15px;
+}
+#climate-action .climate-action__button:focus {
+  outline: 4px solid #a99e22;
+}
+#climate-action #climate-action__close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 18px;
+  height: 18px;
+  opacity: 0.4;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+@media screen and (min-width: 600px) {
+  #climate-action #climate-action__close {
+    right: 20px;
+    top: 20px;
+    width: 25px;
+    height: 25px;
+  }
+}
+#climate-action #climate-action__close:focus {
+  outline: 4px solid #a99e22;
+}
+#climate-action #climate-action__close:hover {
+  opacity: 1;
+}
+#climate-action #climate-action__close:before, #climate-action #climate-action__close:after {
+  position: absolute;
+  left: 11px;
+  content: " ";
+  height: 18px;
+  width: 2px;
+  background-color: #006066;
+  top: 0;
+}
+@media screen and (min-width: 600px) {
+  #climate-action #climate-action__close:before, #climate-action #climate-action__close:after {
+    height: 25px;
+  }
+}
+#climate-action #climate-action__close:before {
+  transform: rotate(45deg);
+}
+#climate-action #climate-action__close:after {
+  transform: rotate(-45deg);
+}
+
+/*# sourceMappingURL=/climate.00546347.css.map */
