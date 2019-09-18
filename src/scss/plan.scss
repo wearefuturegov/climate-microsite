@@ -30,9 +30,39 @@
     width: 100%;
     mix-blend-mode: multiply;
     filter: grayscale(1);
-    margin-bottom: 30px;
+    opacity: 0.8;
     @media screen and (min-width: 850px){
         // margin-bottom: 80px;
+    }
+
+}
+.pledge__row_1, .pledge__row_2, .pledge__row_3 {
+    margin: 0 auto;
+    margin-top: -10px;
+    a {
+        text-decoration: none;
+        &:hover {
+            .pledge__companies{
+                filter: grayscale(0);
+                opacity: 1;
+            }
+        }
+    }
+}
+.pledge__row_1 {
+    max-width: 225px;
+}
+.pledge__row_2 {
+    max-width: 625px;
+    margin-top: -25px;
+    .pledge__companies {
+        width: 24%;
+    }
+}
+.pledge__row_3 {
+    max-width: 825px;
+    .pledge__companies {
+        width: 19%;
     }
 }
 
