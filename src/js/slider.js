@@ -3,7 +3,7 @@ import $ from "jquery"
 export default () => {
 
     $(".slider").hover(
-        () => { paused = true }, 
+        () => { paused = true },
         () => { paused = false }
     );
 
@@ -15,14 +15,14 @@ export default () => {
     setInterval(() => {
         if(!paused){
             if(currentSlide === slides.length-1) {
-                currentSlide = 0 
+                currentSlide = 0
             } else {
                 currentSlide += 1
             }
             console.log(currentSlide)
             advanceSlide(currentSlide)
         }
-    }, 4000)
+    }, 5000)
 
     const advanceSlide = (newSlideIndex) => {
         slides.forEach(slide => {
@@ -33,4 +33,3 @@ export default () => {
 }
 
 
- 
