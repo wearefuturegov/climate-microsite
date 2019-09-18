@@ -41,12 +41,13 @@ window.addEventListener("load", function(){
     document.body.innerHTML += climateElement;
     var fact = document.getElementById("climate-action__box__text__fact_change")
     var factArray = [
-      "data centres will soon have a bigger carbon footprint than the entire aviation industry?",
-      "the internet uses 10% of the world's electricity?",
+      "that data centres will soon have a bigger carbon footprint than the entire aviation industry?",
+      "the internet uses ten percent of the world's electricity?",
       "data traffic is responsible for more than half of digital technology’s global impact",
-      "online video generates 306 million tons of CO2 each year",
+      "global video streaming emitted as much carbon as Spain last year?",
       "if the global IT industry were a country, only China and the United States would contribute more to climate change",
-      "last year, Bitcoin mining was responsible for as much carbon as 1M transatlantic flights"
+      "last year, bitcoin mining was responsible for as much carbon as one million transatlantic flights?",
+      "online video generates 306 million tons of CO2 each year?"
     ]
     fact.innerHTML = factArray[Math.floor(Math.random() * factArray.length)];
   }
