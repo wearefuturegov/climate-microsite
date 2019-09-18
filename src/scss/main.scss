@@ -50,6 +50,10 @@ a:hover{
     }
 }
 
+.hubspot-link__container {
+    display: none;
+}
+
 @import "header.scss";
 @import "hero.scss";
 @import "statement.scss";
